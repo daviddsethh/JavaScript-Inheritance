@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript Object Inheritance</h2>
+
+    <script>
+        function Square(side){
+            this.length = side;
+            this.width = side;
+        }
+
+        Square.prototype.area = function(){
+            return this.length * this.width;
+        }
+
+        // create new squares
+        var sq = new Square(10);
+        var sq2 = new Square(20);
+        console.log("The area of sq = " + sq.area());
+        console.log("The area of sq2 = " + sq2.area());
+    </script>
+</body>
+</html>
